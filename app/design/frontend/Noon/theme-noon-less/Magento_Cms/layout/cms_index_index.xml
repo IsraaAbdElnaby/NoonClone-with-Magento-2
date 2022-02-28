@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <script src="js/themento-head.js"/>
+        <script src="Magento_Cms::js/themento-head2.js"/>
+    </head>
+
+    <referenceContainer name="main">
+        <block class="Magento\Framework\View\Element\Template" name="themento-init" template="Magento_Cms::html/themento-init.phtml" after="-"></block>
+    </referenceContainer>
+    <referenceContainer name="before.body.end">
+        <block class="Magento\Theme\Block\Html\Footer" name="themento.js" template="Magento_Cms::js/themento-body.phtml"></block>
+    </referenceContainer>
+</page>
